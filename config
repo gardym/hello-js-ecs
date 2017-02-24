@@ -1,4 +1,4 @@
-VERSION=10
+VERSION=14
 ECS_FAMILY="hello-js-app"
-IMAGE="adoptapuffin/hello.js"
+IMAGE="672077831204.dkr.ecr.us-east-1.amazonaws.com/hello-js"
 CLUSTER_NAME=default

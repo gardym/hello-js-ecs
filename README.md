@@ -27,7 +27,10 @@ Port 3000 brings all the containers to the yard
 ### AWS
 
 - Set up a new ECS cluster
-- Create an IAM user with the permissions: AmazonEC2ContainerServiceFullAccess
+- Set up a new ECS repository
+- Create an IAM user with the permissions:
+  - AmazonEC2ContainerServiceFullAccess
+  - AmazonEC2ContainerRegistryFullAccess
 - Save your credentials: aws configure
 
 ### Docker Hub
