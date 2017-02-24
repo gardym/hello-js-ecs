@@ -1,10 +1,10 @@
 {
-  "family": "hello-js-app-vVERSION",
+  "family": "ECS_FAMILY-vVERSION",
   "networkMode": "bridge",
   "containerDefinitions": [
     {
-      "name": "hello-js",
-      "image": "adoptapuffin/hello-js",
+      "name": "ECS_FAMILY",
+      "image": "IMAGE",
       "memory": 300,
       "essential": true,
       "portMappings": [

@@ -1,0 +1,3 @@
+VERSION=10
+ECS_FAMILY="hello-js-app"
+IMAGE="adoptapuffin/hello.js"

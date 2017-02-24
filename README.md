@@ -5,6 +5,7 @@ Port 3000 brings all the containers to the yard
 ## Usage
 
     # Install the pre-requisites listed below, then:
+    $ $(EDITOR) config
     $ ./publish_image.sh
     $ ./deploy_to_cluster.sh
 

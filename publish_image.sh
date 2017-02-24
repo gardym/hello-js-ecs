@@ -1,3 +1,5 @@
-#!/bin/sh
-docker build -t adoptapuffin/hello-js:latest .
-docker push adoptapuffin/hello-js
+#!/bin/bash
+source ./config
+
+docker build -t $IMAGE:latest .
+docker push $IMAGE

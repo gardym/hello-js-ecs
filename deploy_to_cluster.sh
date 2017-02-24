@@ -1,9 +1,14 @@
-#!/bin/sh
-VERSION=10
+#!/bin/bash
+set -x
+source ./config
+
 TD_TEMPLATE=taskDefinition.template.json
 TD_COMPOSED=taskDefinition.json
 
-sed s/VERSION/$VERSION/g $TD_TEMPLATE > $TD_COMPOSED
+sed -e "s#VERSION#$VERSION#g" \
+  -e "s#IMAGE#$IMAGE#g" \
+  -e "s#ECS_FAMILY#$ECS_FAMILY#g" \
+  $TD_TEMPLATE > $TD_COMPOSED
 
 OLD_TD_ARN=$(aws ecs list-task-definitions | jaq "taskDefinitionArns[0]")
 SVC_ARN=$(aws ecs list-services | jaq "serviceArns[0]")
