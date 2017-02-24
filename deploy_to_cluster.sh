@@ -18,8 +18,8 @@ NEW_TD_ARN=$(aws ecs register-task-definition \
   | jaq "taskDefinition.taskDefinitionArn")
 
 # Stop running tasks
-aws ecs update-service --service $SVC_ARN --desired-count 0
 TASK_ID=$(aws ecs list-tasks --cluster $CLUSTER_NAME | jaq "taskArns[0]")
+aws ecs update-service --service $SVC_ARN --desired-count 0
 aws ecs stop-task --task $TASK_ID
 
 # Update the service to use the new taskDefinition and
