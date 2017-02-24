@@ -14,7 +14,11 @@
           "protocol": "tcp"
         }
       ],
-      "cpu": 10
+      "cpu": 10,
+      "environment": [
+        { "name": "NODE_ENV", "value": "PRODUCTION" }
+      ],
+      "user": "node"
     }
   ]
 }
