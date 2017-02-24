@@ -1,0 +1,20 @@
+{
+  "family": "hello-js-app-vVERSION",
+  "networkMode": "bridge",
+  "containerDefinitions": [
+    {
+      "name": "hello-js",
+      "image": "adoptapuffin/hello-js",
+      "memory": 300,
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "cpu": 10
+    }
+  ]
+}
