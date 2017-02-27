@@ -33,6 +33,3 @@ Port 3000 brings all the containers to the yard
   - AmazonEC2ContainerRegistryFullAccess
 - Save your credentials: aws configure
 
-### Docker Hub
-
-- Set up a new repository in Docker Hub
