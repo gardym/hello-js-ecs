@@ -19,7 +19,7 @@ Port 3000 brings all the containers to the yard
     # Use pip to install awscli
     $ pip install --upgrade --user awscli
     
-    # Add .local/bin to your PATH
+    # Add ~/.local/bin to your PATH
     
     # Install jaques
     $ npm install -g jaques
